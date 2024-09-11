@@ -1,0 +1,175 @@
+:root {
+    --mainColor : #363333;
+    --secondaryColor : #272121;
+    --acsentColor : #E16428;
+}
+
+body {
+    background-color: var(--mainColor);
+    color: var(--acsentColor);
+    min-height: 900px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+/* Navbar */
+.nav-link.active {
+    color: var(--acsentColor)!important;
+    font-weight: 700;
+}
+/* End Navbar */
+
+/* Section Hero */
+
+#hero {
+    min-height: 100vh;
+    color: #fff;
+}
+
+#hero h1 {
+    color: var(--acsentColor);
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.btn-custom1 {
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-size: 1rem;
+}
+
+.btn-custom1:hover{
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+.social-icon svg{
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+.social-icon-footer svg{
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+/* End Section Hero  */
+
+/* About */
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color:#fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+#about p {
+    color: #fff;
+}
+
+hr {
+    width: 35%;
+    height: 5px;
+    background-color: var(--acsentColor);
+    border: none;
+    margin: 0 auto 30px;
+    opacity: 100%;
+}
+/* End About */
+
+/* Skill  */
+#skill {
+    min-height: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+}
+
+#skill .figma{
+    width: 8%;
+}
+
+#skill .card {
+    background-color: #414558;
+    height: 100%;
+    color: #fff;
+}
+
+#skill .card:hover {
+    background-color: var(--acsentColor);
+}
+
+.skill-konten {
+    margin-top: 100px;
+}
+/* End Skill  */
+
+/* Certificate  */
+#certificate {
+    margin-top: -300px;
+    padding: 400px 0;
+    padding-bottom: 88px;
+    background-color: var(--secondaryColor);
+    color: #fff;
+}
+
+#certificate p, a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#certificate a:hover {
+    background-color: var(--acsentColor);
+}
+
+#certificate img {
+    width: 49%;
+    padding: 10px;
+}
+/* End Certificate  */
+
+/* Project  */
+#project {
+    min-height: 500px;
+    width: 100%;
+    background-color: var(--mainColor);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+#project .card {
+    margin-left: 30px;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    justify-content: center;
+}
+
+#project .card img {
+    width: 200px;
+}
+/* End Project  */
+
+/* Footer  */
+footer {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+}
+/* End Footer  */
