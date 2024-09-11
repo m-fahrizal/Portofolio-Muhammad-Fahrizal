@@ -143,28 +143,54 @@ hr {
 }
 /* End Certificate  */
 
-/* Project  */
+/* Style untuk project cards */
 #project {
-    min-height: 500px;
-    width: 100%;
     background-color: var(--mainColor);
-    color: #fff;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
 }
 
-#project .card {
-    margin-left: 30px;
+.project-card {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--secondaryColor);
     color: #fff;
-    justify-content: center;
+    transition: transform 0.2s ease;
+    min-height: 320px; /* Menjaga kartu agar memiliki tinggi minimum yang sama */
 }
 
-#project .card img {
-    width: 200px;
+.project-card:hover {
+    transform: scale(1.05);
 }
-/* End Project  */
+
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .project-card {
+        flex-basis: 45%; /* Lebar kartu lebih besar pada layar yang lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-basis: 100%; /* Lebar penuh pada layar kecil */
+    }
+}
 
 /* Footer  */
 footer {
