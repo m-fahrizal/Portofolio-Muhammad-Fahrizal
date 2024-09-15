@@ -19,7 +19,7 @@ body {
 
 .navbar ul li a:hover {
     background-color: #555; 
-    color: var(--acsentColor); 
+    color: var(); 
     border-radius: 5px; 
   }
 
